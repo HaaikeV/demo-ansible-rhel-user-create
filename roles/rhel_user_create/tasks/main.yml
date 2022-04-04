@@ -1,2 +1,13 @@
 ---
-# tasks file for roles/rhel_user_create
+# tasks file for roles/user_create
+- name: Add Demo Group
+  group:
+    name: demo
+    state: present
+
+- name: Add User to Demo Group
+  user:
+    name: user1
+    shell: /bin/bash
+    groups: demo
+    append: yes
