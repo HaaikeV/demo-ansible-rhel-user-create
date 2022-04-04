@@ -3,7 +3,6 @@
   gather_facts: true
   vars:
    ansible_connection: local
-   ansible_python_interpreter: /usr/libexec/platform-python
   tasks:
    - include_role:
        name: user_create
