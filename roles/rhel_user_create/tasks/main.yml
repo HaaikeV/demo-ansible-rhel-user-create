@@ -1,13 +1,15 @@
 ---
 # tasks file for roles/user_create
-- name: Add Demo Group
-  group:
-    name: demo
-    state: present
+#- name: Add Demo Group
+#  group:
+#    name: demo
+#    state: present
 
 - name: Add User to Demo Group
   user:
-    name: user1
+    name: "{{ user_name }}"
     shell: /bin/bash
-    groups: demo
+    groups: 
+      - wheel
     append: yes
+    state: present
