@@ -1,2 +1,3 @@
 ---
 # vars file for roles/rhel_user_create
+user_name: aws-1
