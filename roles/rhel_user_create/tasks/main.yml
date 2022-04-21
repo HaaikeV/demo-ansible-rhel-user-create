@@ -9,7 +9,7 @@
   user:
     name: "{{ user_name }}"
     shell: /bin/bash
-    groups: 
-      - adm
+#    groups: 
+#      - adm
     append: yes
     state: present
