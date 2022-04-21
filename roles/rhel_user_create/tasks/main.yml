@@ -10,6 +10,6 @@
     name: "{{ user_name }}"
     shell: /bin/bash
     groups: 
-      - wheel
+      - adm
     append: yes
     state: present
